@@ -3,7 +3,7 @@
 class Song
   attr_accessor :name
   
-  def initiate(name)
+  def initialize(name)
     @name = name
   end
   
