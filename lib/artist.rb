@@ -7,4 +7,8 @@ class Artist
     @name = name
   end
   
+  def songs
+    Song.all
+  end
+  
 end
