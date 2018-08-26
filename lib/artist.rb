@@ -21,4 +21,8 @@ class Artist
       new_artist = Artist.new(artist_name)
       new_artist.save
     end
+    
+  def print_songs
+      Song.all.select {|song| song.artist = self}
+  end
 end
