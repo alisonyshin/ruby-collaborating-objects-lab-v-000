@@ -12,7 +12,11 @@ class Song
   end
   
   def new_by_filename(filenames)
-    filenames.split(" - ")
+    filenames.each {|file|
+      song_name = file.split(" - ")[0]
+      song = Song.new(song_name)
+      artist_name = file.split(" - ")[1]
+      artist = song.artist(artist_name)
   end  
   
 end
