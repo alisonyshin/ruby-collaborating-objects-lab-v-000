@@ -13,6 +13,9 @@ class Song
     @artist = artist_object
   end
   
+  def self.all
+    @@all
+  end
   # def new_by_filename(filenames)
   #   filenames.each {|file|
   #     song_name = file.split(" - ")[0]
