@@ -11,12 +11,12 @@ class Song
     @artist = artist_object
   end
   
-  def new_by_filename(filenames)
-    filenames.each {|file|
-      song_name = file.split(" - ")[0]
-      song = Song.new(song_name)
-      artist_name = file.split(" - ")[1]
-      artist = Artist.find_or_create_by_name(artist_name)}
-  end  
+  # def new_by_filename(filenames)
+  #   filenames.each {|file|
+  #     song_name = file.split(" - ")[0]
+  #     song = Song.new(song_name)
+  #     artist_name = file.split(" - ")[1]
+  #     artist = Artist.find_or_create_by_name(artist_name)}
+  # end  
   
 end
