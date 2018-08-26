@@ -7,7 +7,7 @@ class Song
     @name = name
   end
   
-  def artist = (artist_object)
+  def artist = artist_object
     @artist = artist_object
   end
   
