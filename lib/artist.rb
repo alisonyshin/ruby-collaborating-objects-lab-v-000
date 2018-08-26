@@ -16,4 +16,9 @@ class Artist
     @@all << self
   end
   
+  def find_or_create_by_name(artist_name)
+    if @@all.select {|artist| artist.name = artist_name} == nil
+      new_artist = Artist.new(artist_name)
+      new_artist.save
+    end
 end
