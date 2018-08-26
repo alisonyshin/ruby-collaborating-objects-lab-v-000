@@ -10,7 +10,10 @@ class MP3Importer
   end
   
   def files
-    Dir.foreach(@path).each {|mp3file| @import_files << mp3file.to_s if mp3file.to_s =! "." && }
+    Dir.foreach(@path).each {|mp3file| 
+      if mp3file.to_s =! "." && mp3file.to_s =! ".."
+        @import_files << mp3file.to_s
+    }
     @import_files
   end
   
