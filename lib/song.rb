@@ -7,9 +7,9 @@ class Song
     @name = name
   end
   
-  # def artist=(artist_object)
-  #   @artist = artist_object
-  # end
+  def artist=(artist_object)
+    @artist = artist_object
+  end
   
   # def new_by_filename(filenames)
   #   filenames.each {|file|
