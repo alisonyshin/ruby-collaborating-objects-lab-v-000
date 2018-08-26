@@ -11,7 +11,7 @@ class MP3Importer
   
   def files
     Dir.foreach(@path).each {|mp3file| 
-      if mp3file.to_s =! "." && mp3file.to_s =! ".."
+      if mp3file.to_s != "." && mp3file.to_s != ".."
         @import_files << mp3file.to_s
       end
     }
