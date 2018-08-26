@@ -21,6 +21,7 @@ class Artist
       new_artist = Artist.new(artist_name)
       new_artist.save
     end
+  end
     
   def print_songs
       Song.all.select {|song| print song if song.artist = self}
